@@ -17,9 +17,9 @@ List<Data>AppData=[
 
   Data(
 
-      AppName:"Momix Apk " ,
-      Image: 'Assests/Add_Image_1.png',
-      link:"https://m.touchcric.com/",
+      AppName:"👀 Momix Apk " ,
+      Image: 'Assests/IPL_image.png',
+      link:"https://apkdays.com/en/momix-apk-2-2-5-download-2/download/577702",
       Linkname:"Momix",
       Rating:"10/10",
       Feature:" \n🎈Stream  New Movie   ✔\n"
@@ -29,38 +29,56 @@ List<Data>AppData=[
       "🎈New Bollywood movie in multiple language  ✔\n"
           "🎈IPL Live Stream     ✔\n"
       "🎈Add=No.Add.\n\n"
+    "View Link : click on Card👇"
       ,
 
   ),
   Data(
 
-    AppName:"ILive Streaming " ,
-    Image: 'Assests/Add_Image_1.png',
-    link:"https://m.touchcric.com/",
-    Linkname:"1",
-    Rating:"1",
-    Feature:"",
+
+    AppName:"👀 Pickashow Apk " ,
+    Image: 'Assests/IPL_image.png',
+    link:"https://pikashow.cc/apk",
+    Linkname:"Pickashow",
+    Rating:"9.5/10",
+    Feature:" \n🎈Stream  New Movie   ✔\n"
+        "🎈Downolad New Movie    ✔\n"
+        "🎈New Hollwood movie in multiple language    ✔\n"
+
+        "🎈New Bollywood movie in multiple language  ✔\n"
+        "🎈IPL Live Stream     ✔\n"
+        "🎈Add=min.(2 add)\n\n"
+    ,
 
   ),
   Data(
 
-    AppName:" Live Streaming " ,
-    Image: 'Assests/Add_Image_1.png',
-    link:"https://m.touchcric.com/",
-    Linkname:"",
-    Rating:"",
-    Feature:"",
+    AppName:"👀 Thop T.V " ,
+    Image: 'Assests/IPL_image.png',
+    link:"https://www.apkmart.net/app/thoptv-pro-apk-85/",
+    Linkname:" Thop T.V",
+    Rating:"8.5/10",
+    Feature:" \n🎈Stream  New Movie   ✔\n"
+        "🎈Downolad New Movie    ✔\n"
+        "🎈New Hollwood movie in multiple language    ✔\n"
 
+        "🎈New Bollywood movie in multiple language  ✔\n"
+        "🎈IPL Live Stream     ✔\n"
+        "🎈Add=min.(4 add)\n\n"
+    ,
   ),
   Data(
 
-    AppName:"Ipl Live Streaming " ,
-    Image: 'Assests/Add_Image_1.png',
-    link:"https://m.touchcric.com/",
-    Linkname:"",
-    Rating:"",
-    Feature:"",
-
+    AppName:"👀 Cric Streamz " ,
+    Image: 'Assests/IPL_image.png',
+    link:"https://kingmodapk.com/thoptv-apk-96/?download",
+    Linkname:" Thop T.V",
+    Rating:"8.5/10",
+    Feature:" \n🎈Watch IPL in many Language  ✔\n"
+        "🎈Live Stream Free    ✔\n"
+        "🎈HighLights Available   ✔\n"
+        "🎈Add=min.(1 add)\n\n"
+    ,
   ),
 
 

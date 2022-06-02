@@ -1,3 +1,12 @@
+import 'package:freerun/Data_list/Cricket/cricket_Outside_data.dart';
+import 'package:freerun/Data_list/Cricket/cricket_inside_Information_data.dart';
+import 'package:freerun/Data_list/Online_%20Shoping%20_app/Shoping_outside_data.dart';
+import 'package:freerun/Data_list/Payment/Payment%20ui%20inside.dart';
+import 'package:freerun/Data_list/Payment/Payment_%20mania%20_inside_data.dart';
+import 'package:freerun/Data_list/Payment/Payment_mania%20data.dart';
+import 'package:freerun/Data_list/Trading/Trading_outside_data.dart';
+import 'package:freerun/Payment%20mania%20inside/Gpay.dart';
+
 class Dat{
   final String websitename;
 
@@ -17,19 +26,76 @@ List<Dat>Homeadd=[
       websitename:"Ipl Live Streaming " ,
 
 
-      Image: 'Assests/Add_Image_1.png',
+      Image: 'Assests/IPL_image.png',
       link:"https://m.touchcric.com/",
       linkname:""
   ),
   Dat(
 
-      websitename:"Ipl Live Streaming " ,
+      websitename:"Amazon Pay " ,
 
 
-      Image: 'Assests/Add_Image_1.png',
-      link:"https://m.touchcric.com/",
+      Image: PaymentManiaInside[0].Image1,
+      link:PaymentMania[0].goto,
       linkname:""
   ),
+  Dat(
+
+      websitename:"Groww " ,
+
+
+      Image: TradingOutside[0].Image2,
+      link:'/Groww',
+      linkname:""
+  ), 
+  Dat(
+
+      websitename:"Myntra  " ,
+
+
+      Image: ShopingOutside[0].Image3,
+      link:"/Myntra",
+      linkname:" "
+  ),
+
+
+  Dat(
+
+      websitename:"Dreamm11 " ,
+
+
+      Image: CricketInside[0].Image1,
+      link:"/Dream11",
+      linkname:""
+  ),
+
+  Dat(
+
+      websitename:"Ajio " ,
+
+
+      Image: ShopingOutside[3].Image2,
+      link:"/Ajio",
+      linkname:""
+  ),
+
+  // Dat(
+  //
+  //     websitename:"Groww " ,
+  //
+  //
+  //     Image: TradingOutside[0].Image2,
+  //     link:'/Groww',
+  //     linkname:""
+  // ),
+
+
+
+
+
+
+
+
   // Data(
   //
   //     websitename:"Iflix " ,

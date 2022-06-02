@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1008200809258",
+    "project_id": "freerun-906ad",
+    "storage_bucket": "freerun-906ad.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1008200809258:android:3b1e922f7acdbd1f41bc53",
+        "android_client_info": {
+          "package_name": "com.example.freerun"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1008200809258-6fbfud3cr6258f09q30odpd60v7erppd.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDfe7dGJiY0Se7fMJwxBZ-YSu6yKvE6r_4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1008200809258-6fbfud3cr6258f09q30odpd60v7erppd.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

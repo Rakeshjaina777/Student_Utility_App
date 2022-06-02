@@ -1,7 +1,17 @@
-
+//11
+import 'package:auto_size_text/auto_size_text.dart';
 import 'package:flutter/cupertino.dart';
 
 import 'package:flutter/material.dart';
+import 'package:freerun/Add_home(3).dart';
+import 'package:freerun/Daily_app.dart';
+import 'package:freerun/Data_list/Cricket/cricket_Outside_data.dart';
+import 'package:freerun/Data_list/Payment/Payment%20ui%20inside.dart';
+import 'package:freerun/Data_list/Payment/Payment_mania%20data.dart';
+import 'package:freerun/Data_list/Trading/Trading_outside_data.dart';
+import 'package:freerun/Home .dart';
+import 'package:freerun/Navigation%20bar.dart';
+import 'package:freerun/Reward_bar.dart';
 
 class Drawe extends StatelessWidget {
   // const Drawe({Key? key}) : super(key: key);
@@ -9,10 +19,10 @@ class Drawe extends StatelessWidget {
   final padding = EdgeInsets.symmetric(horizontal: 20);
   @override
   Widget build(BuildContext context) {
-    final name = 'kaira advani';
-    final email = 'Kairaadvani@gmail.com';
+    final name = 'Rakesh Jain ';
+    final email = 'Rakeshjaina07@gmail';
     final urlImage =
-        'https://www.thenews.com.pk/assets/uploads/updates/2021-12-26/920058_6194067_Kiara-Advani_updates.JPG';
+        'Assests/Ajio/Drawer_1.jpg';
 
     return Container(
       width: 260,
@@ -27,7 +37,7 @@ class Drawe extends StatelessWidget {
                 email: email,
                 onClicked: () => Navigator.of(context).push(MaterialPageRoute(
                   builder: (context) => UserPage(
-                    name: 'Sarah Abs',
+                    name: 'Rakesh Jain',
                     urlImage: urlImage,
                   ),
                 )
@@ -37,45 +47,81 @@ class Drawe extends StatelessWidget {
                 padding: padding,
                 child: Column(
                   children: [
-                    const SizedBox(height: 12),
-                    buildSearchField(),
-                    const SizedBox(height: 24),
+                    // const SizedBox(height: 5),
+                    // buildSearchField(),
+                    Divider(color: Colors.tealAccent),
+                    // const SizedBox(height: 24),
                     buildMenuItem(
-                      text: 'People',
-                      icon: Icons.people,
+                      text: 'Earn by installing  APP',
+                      icon: Icons.local_fire_department,
                       onClicked: () => selectedItem(context, 0),
                     ),
                     const SizedBox(height: 16),
                     buildMenuItem(
-                      text: 'Favourites',
-                      icon: Icons.favorite_border,
+                      text: 'Reward',
+                      icon: Icons.volunteer_activism,
                       onClicked: () => selectedItem(context, 1),
                     ),
                     const SizedBox(height: 16),
                     buildMenuItem(
-                      text: 'Workflow',
-                      icon: Icons.workspaces_outline,
+                      text: 'Movie &Series',
+                      icon: Icons.play_arrow_outlined,
                       onClicked: () => selectedItem(context, 2),
                     ),
                     const SizedBox(height: 16),
                     buildMenuItem(
-                      text: 'Updates',
-                      icon: Icons.update,
+                      text: 'App',
+                      icon: Icons.android,
                       onClicked: () => selectedItem(context, 3),
                     ),
                     const SizedBox(height: 24),
                     Divider(color: Colors.tealAccent),
+                    const SizedBox(height: 14),
+
+                    Text("👀 Recomended App",style: TextStyle(fontSize: 20, color: Colors.tealAccent),),
                     const SizedBox(height: 24),
-                    buildMenuItem(
-                      text: 'Plugins',
-                      icon: Icons.account_tree_outlined,
+
+                    RecomendedApp(
+                      text: 'Get Flat ₹40 \ninstant cashback from P.S',
+                      Image: PaymentMania[0].Image1,
                       onClicked: () => selectedItem(context, 4),
                     ),
-                    const SizedBox(height: 16),
-                    buildMenuItem(
-                      text: 'Notifications',
-                      icon: Icons.notifications_outlined,
+
+
+                    const SizedBox(height: 24),
+
+                    RecomendedApp(
+                      text: 'Earn upto 400\ninstant cashback from P.s',
+                      Image: TradingOutside[0].Image1,
                       onClicked: () => selectedItem(context, 5),
+                    ),
+
+
+                    const SizedBox(height: 24),
+                    const SizedBox(height: 24),
+
+                    RecomendedApp(
+                      text: 'Earn upto 500\ninstant cashback',
+                      Image: TradingOutside[1].Image1,
+                      onClicked: () => selectedItem(context, 4),
+                    ),
+
+                    const SizedBox(height: 24),
+                    const SizedBox(height: 24),
+
+                    RecomendedApp(
+                      text: 'Earn upto 500\ninstant cashback',
+                      Image: TradingOutside[3].Image1,
+                      onClicked: () => selectedItem(context, 4),
+                    ),
+
+                    const SizedBox(height: 24),
+                    const SizedBox(height: 24),
+
+                    RecomendedApp(
+                      text: 'Earn upto 200\ninstant cashback',
+                      Image: CricketOutside[0].Image1,
+                      onClicked: () => selectedItem(context, 6),
                     ),
                   ],
                 ),
@@ -99,7 +145,13 @@ class Drawe extends StatelessWidget {
           padding: padding.add(EdgeInsets.symmetric(vertical: 40)),
           child: Row(
             children: [
-              CircleAvatar(radius: 30, backgroundImage: NetworkImage(urlImage)),
+
+              CircleAvatar(radius: 30,
+
+                backgroundColor:Colors.black,
+                child: Icon(Icons.person,color: Colors.tealAccent,size: 39,),
+
+              ),
               SizedBox(width: 20),
               Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
@@ -109,14 +161,26 @@ class Drawe extends StatelessWidget {
                     style: TextStyle(fontSize: 20, color: Colors.tealAccent),
                   ),
                   const SizedBox(height: 4),
-                SingleChildScrollView(
-                  scrollDirection: Axis.vertical,
-                  child: Text(
-                        email,
-                        maxLines: 2,
-                        style: TextStyle(fontSize: 12, color: Colors.tealAccent),
-                      ),
-                ),
+
+                     Container(
+
+                       child: AutoSizeText (
+                           // fit: BoxFit.contain,
+                          // child: SingleChildScrollView(
+                          //   scrollDirection: Axis.horizontal,
+                          //   child: Text(
+
+                              email,
+                         presetFontSizes:[12,10],
+                              maxLines: 2,
+                              style: TextStyle( color: Colors.tealAccent),
+                              overflow: TextOverflow.ellipsis,
+                            ),
+                     ),
+
+                      // ),
+
+                  // ),
 
                 ],
               ),
@@ -127,29 +191,91 @@ class Drawe extends StatelessWidget {
         ),
       );
 
-  Widget buildSearchField() {
-    final color = Colors.tealAccent;
+  // Widget buildSearchField() {
+  //   final color = Colors.tealAccent;
+  //
+  //   return TextField(
+  //     style: TextStyle(color: color),
+  //     decoration: InputDecoration(
+  //       contentPadding: EdgeInsets.symmetric(horizontal: 20, vertical: 15),
+  //       hintText: 'Search',
+  //       hintStyle: TextStyle(color: color),
+  //       prefixIcon: Icon(Icons.search, color: color),
+  //       filled: true,
+  //       fillColor: Colors.white12,
+  //       enabledBorder: OutlineInputBorder(
+  //         borderRadius: BorderRadius.circular(5),
+  //         borderSide: BorderSide(color: color.withOpacity(0.7)),
+  //       ),
+  //       focusedBorder: OutlineInputBorder(
+  //         borderRadius: BorderRadius.circular(5),
+  //         borderSide: BorderSide(color: color.withOpacity(0.7)),
+  //       ),
+  //     ),
+  //   );
+  // }
 
-    return TextField(
-      style: TextStyle(color: color),
-      decoration: InputDecoration(
-        contentPadding: EdgeInsets.symmetric(horizontal: 20, vertical: 15),
-        hintText: 'Search',
-        hintStyle: TextStyle(color: color),
-        prefixIcon: Icon(Icons.search, color: color),
-        filled: true,
-        fillColor: Colors.white12,
-        enabledBorder: OutlineInputBorder(
-          borderRadius: BorderRadius.circular(5),
-          borderSide: BorderSide(color: color.withOpacity(0.7)),
-        ),
-        focusedBorder: OutlineInputBorder(
-          borderRadius: BorderRadius.circular(5),
-          borderSide: BorderSide(color: color.withOpacity(0.7)),
-        ),
-      ),
-    );
+  Widget RecomendedApp(
+      {
+        required var Image ,
+        required var text,
+        VoidCallback? onClicked,
+      }
+      ){
+    return
+      Padding(
+        padding: const EdgeInsets.all(5.0),
+
+          child: GestureDetector(
+            onTap: onClicked,
+            child: Row(
+              children: [
+                Container(
+                  height: 35,
+                  width: 60,
+                  // color: Colors.red,
+                  decoration: BoxDecoration(
+
+
+
+                    border: Border.all(color:Colors.tealAccent,width: 0.5),
+
+                    borderRadius: BorderRadius.circular(5),
+
+                    image:DecorationImage(
+
+                      image: AssetImage(Image),
+
+
+                      fit: BoxFit.fill,
+
+                    ),
+                  ),
+                ),
+                const SizedBox(width: 24),
+                // Expanded(
+                //   child: SingleChildScrollView(
+                //   scrollDirection : Axis.horizontal,
+                Expanded(
+                  child: FittedBox(
+                    fit : BoxFit.contain,
+                      child: Text(text,style: TextStyle(
+                        color: Colors.tealAccent,fontSize:16,fontWeight: FontWeight.bold, )
+                      // ,maxLines: 2,
+                      ),
+                    ),
+                ),
+                // )
+              ],
+            ),
+          ),
+
+      );
+
+
   }
+
+
 
   Widget buildMenuItem({
     required String text,
@@ -168,56 +294,47 @@ class Drawe extends StatelessWidget {
   }
 
   void selectedItem(BuildContext context, int index) {
-    // Navigator.of(context).pop();
+    Navigator.of(context).pop();
 
     switch (index) {
       case 0:
         Navigator.of(context).push(MaterialPageRoute(
-          builder: (context) => PeoplePage(),
+          builder: (context) => Add_bar(),
         ));
         break;
       case 1:
         Navigator.of(context).push(MaterialPageRoute(
-          builder: (context) => FavouritesPage(),
+          builder: (context) => Reward(),
         ));
         break;
+      case 2:
+        Navigator.of(context).push(MaterialPageRoute(
+          builder: (context) => NavigationBa(),
+        ));
+        break;
+      case 3:
+        Navigator.pushNamed(context, "/Gpay")
+        ;
+        break;
+      case 4 :
+        Navigator.pushNamed(context, "/AmazonPay")
+        ;
+        break;
+
+      case 5 :
+        Navigator.pushNamed(context, "/Groww")
+        ;
+        break;
+      case 6 :
+        Navigator.pushNamed(context, "/Dream11")
+        ;
+        break;
+
+
     }
   }
 }
-//
-// class ButtonWidget extends StatelessWidget {
-//   final IconData icon;
-//   final String text;
-//   final VoidCallback onClicked;
-//
-//   const ButtonWidget({
-//     Key? key,
-//     required this.icon,
-//     required this.text,
-//     required this.onClicked,
-//   }) : super(key: key);
-//
-//   @override
-//   Widget build(BuildContext context) => ElevatedButton(
-//     style: ElevatedButton.styleFrom(
-//       minimumSize: Size.fromHeight(50),
-//     ),
-//     child: buildContent(),
-//     onPressed: onClicked,
-//   );
-//
-//   Widget buildContent() => Row(
-//     mainAxisSize: MainAxisSize.min,
-//     children: [
-//       Icon(icon, size: 48),
-//       SizedBox(width: 46),
-//       Text(
-//         text,
-//         style: TextStyle(fontSize: 22, color: Colors.white),
-//       ),
-//     ],
-//   );
-// }
+
 
 
 
@@ -240,36 +357,11 @@ class UserPage extends StatelessWidget {
       title: Text(name),
       centerTitle: true,
     ),
-    body: Image.network(
+    body: Image.asset(
       urlImage,
       width: double.infinity,
       height: double.infinity,
       fit: BoxFit.cover,
-    ),
-  );
-}
-
-class PeoplePage extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) => Scaffold(
-    //drawer: NavigationDrawerWidget(),
-    appBar: AppBar(
-      title: Text('People'),
-      centerTitle: true,
-      backgroundColor: Colors.black,
-    ),
-  );
-}
-
-
-class FavouritesPage extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) => Scaffold(
-    //drawer: NavigationDrawerWidget(),
-    appBar: AppBar(
-      title: Text('People'),
-      centerTitle: true,
-      backgroundColor: Colors.black,
     ),
   );
 }
